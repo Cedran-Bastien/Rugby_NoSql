@@ -1,0 +1,58 @@
+{
+  "numMatch": number,
+  "equipeRecoie": {
+    "codeEquipe": number,
+    "pays": string,
+    "couleurMaillot": string,
+    "entraineur": string,
+    "joueur": [{
+      "numJoueur": number,
+      "nom": string,
+      "prenom": string,
+      "poste": {
+        "numPoste": string,
+        "libelle": string
+      },
+      "titulaire": boolean,
+      "tempsJeu": number,
+      "ptsMarqué": number
+    }]
+  },
+  "equipeRecu": {
+    "codeEquipe": number,
+    "pays": string,
+    "couleurMaillot": string,
+    "entraineur": string,
+    "joueur": [{
+      "numJoueur": number,
+      "nom": string,
+      "prenom": string,
+      "poste": {
+        "numPoste": string,
+        "libelle": string
+      },
+      "titulaire": boolean,
+      "tempsJeu": number,
+      "ptsMarqué": number
+    }]
+  },
+  "dates": timestamp,
+  "nbSpectateur": number,
+  "ptsEquipeRecoie": number,
+  "nbEssaieEquipeRecoie": number,
+  "ptsEquipeRecue": number,
+  "nbEssaieEquipeRecu": number,
+  "arbitre": {
+    "numArbitre": number,
+    "nom": string,
+    "prenom": string,
+    "nationalité": string
+  },
+  "stade": {
+    "numStade": number,
+    "nom": string,
+    "ville": string,
+    "pays": string,
+    "capacité": number
+  }
+}
