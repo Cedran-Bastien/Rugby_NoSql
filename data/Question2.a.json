@@ -1,58 +1,48 @@
 {
-  "numMatch": number,
+  "idMatch": number,
   "equipeRecoie": {
-    "codeEquipe": number,
+    "codeEquipe": string,
     "pays": string,
     "couleurMaillot": string,
-    "entraineur": string,
-    "joueur": [{
-      "numJoueur": number,
-      "nom": string,
-      "prenom": string,
-      "poste": {
-        "numPoste": string,
-        "libelle": string
-      },
-      "titulaire": boolean,
-      "tempsJeu": number,
-      "ptsMarqué": number
-    }]
+    "entraineur": string
   },
   "equipeRecu": {
-    "codeEquipe": number,
+    "codeEquipe": string,
     "pays": string,
     "couleurMaillot": string,
-    "entraineur": string,
-    "joueur": [{
-      "numJoueur": number,
+    "entraineur": string
+  },
+  "joueurs": [{
+      "coefficientEfficacite": number,
+      "idEquipe": string,
+      "idJoueur": string,
+      "nbEssaisMarques": number,
       "nom": string,
-      "prenom": string,
       "poste": {
-        "numPoste": string,
+        "idPoste": string,
         "libelle": string
       },
-      "titulaire": boolean,
+      "prenom": string,
+      "ptsMarques": number,
       "tempsJeu": number,
-      "ptsMarqué": number
-    }]
-  },
-  "dates": timestamp,
-  "nbSpectateur": number,
+      "titulaire": boolean
+    }],
+  "date": Date,
+  "numSpec": number,
   "ptsEquipeRecoie": number,
   "nbEssaieEquipeRecoie": number,
   "ptsEquipeRecue": number,
   "nbEssaieEquipeRecu": number,
   "arbitre": {
-    "numArbitre": number,
+    "idArbitre": string,
     "nom": string,
     "prenom": string,
     "nationalité": string
   },
   "stade": {
-    "numStade": number,
+    "idStade": string,
     "nom": string,
     "ville": string,
-    "pays": string,
-    "capacité": number
+    "capacite": number
   }
 }
