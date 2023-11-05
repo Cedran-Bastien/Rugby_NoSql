@@ -93,4 +93,12 @@ public class Joueurs {
     public void setTitulaire(Boolean titulaire) {
         this.titulaire = titulaire;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj.getClass() == Joueurs.class)
+            return this.getIdJoueur().equals(((Joueurs)obj).getIdJoueur());
+
+        return false;
+    }
 }

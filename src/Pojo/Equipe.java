@@ -9,7 +9,7 @@ public class Equipe {
 
     public Equipe() {}
 
-    public String getidEquipe() {
+    public String getIdEquipe() {
         return idEquipe;
     }
 
